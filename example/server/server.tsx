@@ -129,14 +129,6 @@ app.use(async (ctx, next) => {
   // else await next();
 });
 
-// Error handler missing path?
-// coming into here will break the server
-// app.use(async (ctx) => {
-//   // Will throw a 500 on every request.  ??????
-//   log.error('finally in error handler of the end');
-//   ctx.throw(500);
-// });
-
 // import.meta.main determines if the server was opened directly (i.e. through 'deno run' or 'denon start')
 // rather than through testing
 if (import.meta.main) {
